@@ -6,20 +6,27 @@
     <body>
         <div class="mx-auto bg-slate-50 flex flex-col justify-around">
             <div id="navbar" class="p-4 flex items-center justify-center md:px-40">
-                <div id="navbar-container" class="flex flex-col gap-y-4 gap-x-3 w-full md:flex-row bg-slate-50 border border-gray-200 rounded-xl shadow justify-center justify-between p-4">
-                    <div id="navbar-logo" class="flex items-center justify-center">
-                        <span class="text-xl font-bold text-gray-600">STRATLAB</span>
+                <div id="navbar-container" class="flex gap-y-4 gap-x-3 w-full flex-col md:flex-row bg-slate-50 border border-gray-200 rounded-xl shadow justify-between p-4 h-16 overflow-hidden">
+                    <div class="flex flex-row justify-between items-center">
+                        <div id="navbar-logo" class="flex items-center justify-center">
+                            <span class="text-xl font-bold text-gray-600">STRATLAB</span>
+                        </div>
+                        <div id="hamburger" class="flex flex-row md:hidden justify-between items-center">
+                            <i class="fa-solid fa-bars fa-2xl text-gray-600 cursor-pointer"></i>
+                        </div>
                     </div>
-                    <div id="navbar-links" class="flex flex-col gap-y-4 items-center justify-center gap-x-9 md:flex-row">
-                        <a href="#" class="text-sm font-bold text-gray-600 hover:text-gray-900">Service</a>
-                        <a href="#" class="text-sm font-bold text-gray-600 hover:text-gray-900">Why Us</a>
-                        <a href="#" class="text-sm font-bold text-gray-600 hover:text-gray-900">Testimonial</a>
-                        <a href="#" class="text-sm font-bold text-gray-600 hover:text-gray-900">FAQ</a>
-                        <a href="#" class="text-sm font-bold text-gray-600 hover:text-gray-900">About</a>
-                    </div>
-                    <div id="navbar-buttons" class="flex items-center justify-center gap-x-3">
-                        <div id="login-button" class="flex items-center justify-center border border-gray-200 rounded-2xl bg-slate-50 shadow px-4 py-1 cursor-pointer text-gray-600 font-bold">Login</div>
-                        <div id="signup-button" class="flex items-center justify-center bg-green-600 border border-gray-200 rounded-2xl shadow px-4 py-1 cursor-pointer text-slate-50 text-gray-600 font-bold">Sign Up</div>
+                    <div class="flex flex-col md:flex-row md:flex md:justify-between md:w-2/3 gap-y-10">
+                        <div id="navbar-links" class="flex flex-col gap-y-4 items-center justify-center gap-x-9 md:flex-row">
+                            <a href="#" class="text-sm font-bold text-gray-600 hover:text-gray-900">Service</a>
+                            <a href="#" class="text-sm font-bold text-gray-600 hover:text-gray-900">Why Us</a>
+                            <a href="#" class="text-sm font-bold text-gray-600 hover:text-gray-900">Testimonial</a>
+                            <a href="#" class="text-sm font-bold text-gray-600 hover:text-gray-900">FAQ</a>
+                            <a href="#" class="text-sm font-bold text-gray-600 hover:text-gray-900">About</a>
+                        </div>
+                        <div id="navbar-buttons" class="flex items-center justify-center gap-x-3">
+                            <div id="login-button" class="flex items-center justify-center border border-gray-200 rounded-2xl bg-slate-50 shadow px-4 py-1 cursor-pointer text-gray-600 font-bold">Login</div>
+                            <div id="signup-button" class="flex items-center justify-center bg-green-600 border border-gray-200 rounded-2xl shadow px-4 py-1 cursor-pointer text-slate-50 text-gray-600 font-bold">Sign Up</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -248,5 +255,6 @@
         </div>
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://kit.fontawesome.com/40769f9402.js" crossorigin="anonymous"></script>
+        <script src="scripts/script.js"></script>
     </body>
 </html>
